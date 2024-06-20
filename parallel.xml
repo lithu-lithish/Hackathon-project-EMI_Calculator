@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener class-name="outputUtility.ExtendReport"/>
+	</listeners> 
+<parameter name="browser" value="chrome" ></parameter>
+  <test thread-count="2" name="Test" parallel="classes">
+    <classes>
+      <!--class name="testcases.Tc_001_CarLoan"/-->
+      <class name="cucumber.Runner"/>
+      <class name="testcases.Tc_002_HomeLoan"/>
+      
+      <class name="testcases.Tc_003_001_UI_ValidatingEMIcalculator_LoanAmount"/>
+      <class name="testcases.Tc_003_002_UI_ValidatingEMIcalculator_InterestRate"/>
+      <class name="testcases.Tc_003_003_UI_ValidatingEMIcalculator_LoanTenure"/>
+      <class name="testcases.Tc_003_004_UI_ValidatingEMIcalculator_FeesAndCharges"/>
+      <class name="testcases.Tc_003_005_UI_ValidatingEMIcalculator_YearAndMonth"/>
+
+      <class name="testcases.Tc_003_006_UI_ValidatingLoanAmountcalculator_Emi"/>
+      <class name="testcases.Tc_003_007_UI_ValidatingLoanAmountcalculator_InterestRate"/>
+      <class name="testcases.Tc_003_008_UI_ValidatingLoanAmountcalculator_LoanTenture"/>
+      <class name="testcases.Tc_003_009_UI_ValidatingLoanAmountcalculator_FeesAndCharges"/>
+      <class name="testcases.Tc_003_010_UI_ValidatingLoanAmountcalculator_YearAndMonth"/>
+      
+      <class name="testcases.Tc_003_011_UI_ValidatingLoanTenturecalculator_LoanAmount"/>
+      <class name="testcases.Tc_003_012_UI_ValidatingLoanTenturecalculator_EMI"/>
+      <class name="testcases.Tc_003_013_UI_ValidatingLoanTenturecalculator_InterestRate"/>
+      <class name="testcases.Tc_003_014_UI_ValidatingLoanTenturecalculator_FeesAndCharges"/>
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

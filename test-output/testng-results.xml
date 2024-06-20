@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-13T17:48:42 IST" name="Suite" finished-at="2024-06-13T17:54:36 IST" duration-ms="354752">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Runner@5e77f0f4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-06-13T17:48:42 IST" name="Test" finished-at="2024-06-13T17:54:36 IST" duration-ms="354752">
+      <class name="testcases.Tc_003_004_UI_ValidatingEMIcalculator_FeesAndCharges">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_003_004_UI_ValidatingEMIcalculator_FeesAndCharges@388ffbc2]" started-at="2024-06-13T17:51:01 IST" name="driverSetup" finished-at="2024-06-13T17:51:19 IST" duration-ms="17664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validatingEMIcalculator_FeesAndCharges()[pri:6, instance:testcases.Tc_003_004_UI_ValidatingEMIcalculator_FeesAndCharges@388ffbc2]" started-at="2024-06-13T17:51:19 IST" name="validatingEMIcalculator_FeesAndCharges" finished-at="2024-06-13T17:51:23 IST" duration-ms="3421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingEMIcalculator_FeesAndCharges -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_003_004_UI_ValidatingEMIcalculator_FeesAndCharges@388ffbc2]" started-at="2024-06-13T17:51:23 IST" name="browserClose" finished-at="2024-06-13T17:51:26 IST" duration-ms="3619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_003_004_UI_ValidatingEMIcalculator_FeesAndCharges -->
+      <class name="testcases.Tc_003_009_UI_ValidatingLoanAmountcalculator_FeesAndCharges">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_003_009_UI_ValidatingLoanAmountcalculator_FeesAndCharges@2e5c7f0b]" started-at="2024-06-13T17:52:42 IST" name="driverSetup" finished-at="2024-06-13T17:52:53 IST" duration-ms="11375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validatingLoanAmountcalculator_FeesAndCharges()[pri:11, instance:testcases.Tc_003_009_UI_ValidatingLoanAmountcalculator_FeesAndCharges@2e5c7f0b]" started-at="2024-06-13T17:52:53 IST" name="validatingLoanAmountcalculator_FeesAndCharges" finished-at="2024-06-13T17:52:55 IST" duration-ms="1601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingLoanAmountcalculator_FeesAndCharges -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_003_009_UI_ValidatingLoanAmountcalculator_FeesAndCharges@2e5c7f0b]" started-at="2024-06-13T17:52:55 IST" name="browserClose" finished-at="2024-06-13T17:52:58 IST" duration-ms="3623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_003_009_UI_ValidatingLoanAmountcalculator_FeesAndCharges -->
+      <class name="testcases.Tc_003_001_UI_ValidatingEMIcalculator_LoanAmount">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_003_001_UI_ValidatingEMIcalculator_LoanAmount@e6516e]" started-at="2024-06-13T17:49:41 IST" name="driverSetup" finished-at="2024-06-13T17:49:56 IST" duration-ms="15847" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validatingEMIcalculator_LoanAmount()[pri:3, instance:testcases.Tc_003_001_UI_ValidatingEMIcalculator_LoanAmount@e6516e]" started-at="2024-06-13T17:49:56 IST" name="validatingEMIcalculator_LoanAmount" finished-at="2024-06-13T17:50:00 IST" duration-ms="3557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingEMIcalculator_LoanAmount -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_003_001_UI_ValidatingEMIcalculator_LoanAmount@e6516e]" started-at="2024-06-13T17:50:00 IST" name="browserClose" finished-at="2024-06-13T17:50:04 IST" duration-ms="3757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_003_001_UI_ValidatingEMIcalculator_LoanAmount -->
+      <class name="testcases.Tc_003_011_UI_ValidatingLoanTenturecalculator_LoanAmount">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_003_011_UI_ValidatingLoanTenturecalculator_LoanAmount@4de025bf]" started-at="2024-06-13T17:53:20 IST" name="driverSetup" finished-at="2024-06-13T17:53:31 IST" duration-ms="11270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validatingLoanTenturecalculator_LoanAmount()[pri:13, instance:testcases.Tc_003_011_UI_ValidatingLoanTenturecalculator_LoanAmount@4de025bf]" started-at="2024-06-13T17:53:31 IST" name="validatingLoanTenturecalculator_LoanAmount" finished-at="2024-06-13T17:53:35 IST" duration-ms="4019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingLoanTenturecalculator_LoanAmount -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_003_011_UI_ValidatingLoanTenturecalculator_LoanAmount@4de025bf]" started-at="2024-06-13T17:53:35 IST" name="browserClose" finished-at="2024-06-13T17:53:39 IST" duration-ms="4525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_003_011_UI_ValidatingLoanTenturecalculator_LoanAmount -->
+      <class name="testcases.Tc_003_006_UI_ValidatingLoanAmountcalculator_Emi">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_003_006_UI_ValidatingLoanAmountcalculator_Emi@4da855dd]" started-at="2024-06-13T17:51:48 IST" name="driverSetup" finished-at="2024-06-13T17:51:58 IST" duration-ms="9752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validatingLoanAmountcalculator_Emi()[pri:8, instance:testcases.Tc_003_006_UI_ValidatingLoanAmountcalculator_Emi@4da855dd]" started-at="2024-06-13T17:51:58 IST" name="validatingLoanAmountcalculator_Emi" finished-at="2024-06-13T17:51:59 IST" duration-ms="1392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingLoanAmountcalculator_Emi -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_003_006_UI_ValidatingLoanAmountcalculator_Emi@4da855dd]" started-at="2024-06-13T17:51:59 IST" name="browserClose" finished-at="2024-06-13T17:52:03 IST" duration-ms="3649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_003_006_UI_ValidatingLoanAmountcalculator_Emi -->
+      <class name="testcases.Tc_003_002_UI_ValidatingEMIcalculator_InterestRate">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_003_002_UI_ValidatingEMIcalculator_InterestRate@6de54b40]" started-at="2024-06-13T17:50:04 IST" name="driverSetup" finished-at="2024-06-13T17:50:30 IST" duration-ms="26496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validatingEMIcalculator_InterestRate()[pri:4, instance:testcases.Tc_003_002_UI_ValidatingEMIcalculator_InterestRate@6de54b40]" started-at="2024-06-13T17:50:30 IST" name="validatingEMIcalculator_InterestRate" finished-at="2024-06-13T17:50:34 IST" duration-ms="3690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingEMIcalculator_InterestRate -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_003_002_UI_ValidatingEMIcalculator_InterestRate@6de54b40]" started-at="2024-06-13T17:50:34 IST" name="browserClose" finished-at="2024-06-13T17:50:38 IST" duration-ms="3781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_003_002_UI_ValidatingEMIcalculator_InterestRate -->
+      <class name="testcases.Tc_003_007_UI_ValidatingLoanAmountcalculator_InterestRate">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_003_007_UI_ValidatingLoanAmountcalculator_InterestRate@6691490c]" started-at="2024-06-13T17:52:03 IST" name="driverSetup" finished-at="2024-06-13T17:52:13 IST" duration-ms="10002" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validatingLoanAmountcalculator_InterestRate()[pri:9, instance:testcases.Tc_003_007_UI_ValidatingLoanAmountcalculator_InterestRate@6691490c]" started-at="2024-06-13T17:52:13 IST" name="validatingLoanAmountcalculator_InterestRate" finished-at="2024-06-13T17:52:16 IST" duration-ms="3230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingLoanAmountcalculator_InterestRate -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_003_007_UI_ValidatingLoanAmountcalculator_InterestRate@6691490c]" started-at="2024-06-13T17:52:16 IST" name="browserClose" finished-at="2024-06-13T17:52:20 IST" duration-ms="3787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_003_007_UI_ValidatingLoanAmountcalculator_InterestRate -->
+      <class name="testcases.Tc_003_012_UI_ValidatingLoanTenturecalculator_EMI">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_003_012_UI_ValidatingLoanTenturecalculator_EMI@538613b3]" started-at="2024-06-13T17:53:39 IST" name="driverSetup" finished-at="2024-06-13T17:53:51 IST" duration-ms="11734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validatingLoanTenturecalculator_EMI()[pri:14, instance:testcases.Tc_003_012_UI_ValidatingLoanTenturecalculator_EMI@538613b3]" started-at="2024-06-13T17:53:51 IST" name="validatingLoanTenturecalculator_EMI" finished-at="2024-06-13T17:53:55 IST" duration-ms="4036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingLoanTenturecalculator_EMI -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_003_012_UI_ValidatingLoanTenturecalculator_EMI@538613b3]" started-at="2024-06-13T17:53:55 IST" name="browserClose" finished-at="2024-06-13T17:53:59 IST" duration-ms="4249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_003_012_UI_ValidatingLoanTenturecalculator_EMI -->
+      <class name="testcases.Tc_002_HomeLoan">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_002_HomeLoan@7e70bd39]" started-at="2024-06-13T17:49:05 IST" name="driverSetup" finished-at="2024-06-13T17:49:19 IST" duration-ms="14168" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="valaidateHomeLoan()[pri:2, instance:testcases.Tc_002_HomeLoan@7e70bd39]" started-at="2024-06-13T17:49:19 IST" name="valaidateHomeLoan" finished-at="2024-06-13T17:49:36 IST" duration-ms="16727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valaidateHomeLoan -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_002_HomeLoan@7e70bd39]" started-at="2024-06-13T17:49:36 IST" name="browserClose" finished-at="2024-06-13T17:49:41 IST" duration-ms="4559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_002_HomeLoan -->
+      <class name="testcases.Tc_003_010_UI_ValidatingLoanAmountcalculator_YearAndMonth">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_003_010_UI_ValidatingLoanAmountcalculator_YearAndMonth@21d5c1a0]" started-at="2024-06-13T17:52:58 IST" name="driverSetup" finished-at="2024-06-13T17:53:10 IST" duration-ms="11352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validatingLoanAmountcalculator_YearAndMonth()[pri:12, instance:testcases.Tc_003_010_UI_ValidatingLoanAmountcalculator_YearAndMonth@21d5c1a0]" started-at="2024-06-13T17:53:10 IST" name="validatingLoanAmountcalculator_YearAndMonth" finished-at="2024-06-13T17:53:15 IST" duration-ms="5443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingLoanAmountcalculator_YearAndMonth -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_003_010_UI_ValidatingLoanAmountcalculator_YearAndMonth@21d5c1a0]" started-at="2024-06-13T17:53:15 IST" name="browserClose" finished-at="2024-06-13T17:53:20 IST" duration-ms="4467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_003_010_UI_ValidatingLoanAmountcalculator_YearAndMonth -->
+      <class name="testcases.Tc_003_008_UI_ValidatingLoanAmountcalculator_LoanTenture">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_003_008_UI_ValidatingLoanAmountcalculator_LoanTenture@2187fff7]" started-at="2024-06-13T17:52:20 IST" name="driverSetup" finished-at="2024-06-13T17:52:34 IST" duration-ms="14320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validatingLoanAmountcalculator_LoanTenture()[pri:10, instance:testcases.Tc_003_008_UI_ValidatingLoanAmountcalculator_LoanTenture@2187fff7]" started-at="2024-06-13T17:52:34 IST" name="validatingLoanAmountcalculator_LoanTenture" finished-at="2024-06-13T17:52:38 IST" duration-ms="3824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingLoanAmountcalculator_LoanTenture -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_003_008_UI_ValidatingLoanAmountcalculator_LoanTenture@2187fff7]" started-at="2024-06-13T17:52:38 IST" name="browserClose" finished-at="2024-06-13T17:52:42 IST" duration-ms="3539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_003_008_UI_ValidatingLoanAmountcalculator_LoanTenture -->
+      <class name="testcases.Tc_003_014_UI_ValidatingLoanTenturecalculator_FeesAndCharges">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_003_014_UI_ValidatingLoanTenturecalculator_FeesAndCharges@11389053]" started-at="2024-06-13T17:54:18 IST" name="driverSetup" finished-at="2024-06-13T17:54:29 IST" duration-ms="11047" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validatingLoanTenturecalculator_FeesAndCharges()[pri:16, instance:testcases.Tc_003_014_UI_ValidatingLoanTenturecalculator_FeesAndCharges@11389053]" started-at="2024-06-13T17:54:29 IST" name="validatingLoanTenturecalculator_FeesAndCharges" finished-at="2024-06-13T17:54:33 IST" duration-ms="3816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingLoanTenturecalculator_FeesAndCharges -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_003_014_UI_ValidatingLoanTenturecalculator_FeesAndCharges@11389053]" started-at="2024-06-13T17:54:33 IST" name="browserClose" finished-at="2024-06-13T17:54:36 IST" duration-ms="3672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_003_014_UI_ValidatingLoanTenturecalculator_FeesAndCharges -->
+      <class name="testcases.Tc_003_013_UI_ValidatingLoanTenturecalculator_InterestRate">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_003_013_UI_ValidatingLoanTenturecalculator_InterestRate@1eef9aef]" started-at="2024-06-13T17:53:59 IST" name="driverSetup" finished-at="2024-06-13T17:54:10 IST" duration-ms="11084" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validatingLoanTenturecalculator_InterestRate()[pri:15, instance:testcases.Tc_003_013_UI_ValidatingLoanTenturecalculator_InterestRate@1eef9aef]" started-at="2024-06-13T17:54:10 IST" name="validatingLoanTenturecalculator_InterestRate" finished-at="2024-06-13T17:54:14 IST" duration-ms="3809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingLoanTenturecalculator_InterestRate -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_003_013_UI_ValidatingLoanTenturecalculator_InterestRate@1eef9aef]" started-at="2024-06-13T17:54:14 IST" name="browserClose" finished-at="2024-06-13T17:54:18 IST" duration-ms="3492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_003_013_UI_ValidatingLoanTenturecalculator_InterestRate -->
+      <class name="testcases.Tc_003_005_UI_ValidatingEMIcalculator_YearAndMonth">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_003_005_UI_ValidatingEMIcalculator_YearAndMonth@a50b09c]" started-at="2024-06-13T17:51:26 IST" name="driverSetup" finished-at="2024-06-13T17:51:40 IST" duration-ms="13961" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validatingEMIcalculator_YearAndMonth()[pri:7, instance:testcases.Tc_003_005_UI_ValidatingEMIcalculator_YearAndMonth@a50b09c]" started-at="2024-06-13T17:51:40 IST" name="validatingEMIcalculator_YearAndMonth" finished-at="2024-06-13T17:51:44 IST" duration-ms="3891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingEMIcalculator_YearAndMonth -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_003_005_UI_ValidatingEMIcalculator_YearAndMonth@a50b09c]" started-at="2024-06-13T17:51:44 IST" name="browserClose" finished-at="2024-06-13T17:51:48 IST" duration-ms="4158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_003_005_UI_ValidatingEMIcalculator_YearAndMonth -->
+      <class name="testcases.Tc_003_003_UI_ValidatingEMIcalculator_LoanTenure">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:testcases.Tc_003_003_UI_ValidatingEMIcalculator_LoanTenure@43ed0ff3]" started-at="2024-06-13T17:50:38 IST" name="driverSetup" finished-at="2024-06-13T17:50:51 IST" duration-ms="13221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="validatingEMIcalculator_LoanTenure()[pri:5, instance:testcases.Tc_003_003_UI_ValidatingEMIcalculator_LoanTenure@43ed0ff3]" started-at="2024-06-13T17:50:51 IST" name="validatingEMIcalculator_LoanTenure" finished-at="2024-06-13T17:50:58 IST" duration-ms="7030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingEMIcalculator_LoanTenure -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testcases.Tc_003_003_UI_ValidatingEMIcalculator_LoanTenure@43ed0ff3]" started-at="2024-06-13T17:50:58 IST" name="browserClose" finished-at="2024-06-13T17:51:01 IST" duration-ms="3524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testcases.Tc_003_003_UI_ValidatingEMIcalculator_LoanTenure -->
+      <class name="cucumber.Runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.Runner@5e77f0f4]" started-at="2024-06-13T17:48:42 IST" name="setUpClass" finished-at="2024-06-13T17:48:43 IST" duration-ms="1015" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13563e64]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.Runner@5e77f0f4]" started-at="2024-06-13T17:48:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-13T17:49:05 IST" duration-ms="21945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validating car loan calculation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Car Loan"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.Runner@5e77f0f4]" started-at="2024-06-13T17:49:05 IST" name="tearDownClass" finished-at="2024-06-13T17:49:05 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.Runner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

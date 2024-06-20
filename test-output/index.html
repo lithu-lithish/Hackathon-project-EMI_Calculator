@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\2318715\OneDrive - Cognizant\Pictures\HackertanProject - EMI calcualtor\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="cucumber.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating car loan calculation&quot;, &quot;Car Loan&quot;)">runScenario("Validating car loan calculation", "Car Loan")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_002_HomeLoan" class="method navigator-link" hash-for-method="valaidateHomeLoan">valaidateHomeLoan</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_003_004_UI_ValidatingEMIcalculator_FeesAndCharges" class="method navigator-link" hash-for-method="validatingEMIcalculator_FeesAndCharges">validatingEMIcalculator_FeesAndCharges</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_003_002_UI_ValidatingEMIcalculator_InterestRate" class="method navigator-link" hash-for-method="validatingEMIcalculator_InterestRate">validatingEMIcalculator_InterestRate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_003_001_UI_ValidatingEMIcalculator_LoanAmount" class="method navigator-link" hash-for-method="validatingEMIcalculator_LoanAmount">validatingEMIcalculator_LoanAmount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_003_003_UI_ValidatingEMIcalculator_LoanTenure" class="method navigator-link" hash-for-method="validatingEMIcalculator_LoanTenure">validatingEMIcalculator_LoanTenure</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_003_005_UI_ValidatingEMIcalculator_YearAndMonth" class="method navigator-link" hash-for-method="validatingEMIcalculator_YearAndMonth">validatingEMIcalculator_YearAndMonth</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_003_006_UI_ValidatingLoanAmountcalculator_Emi" class="method navigator-link" hash-for-method="validatingLoanAmountcalculator_Emi">validatingLoanAmountcalculator_Emi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_003_009_UI_ValidatingLoanAmountcalculator_FeesAndCharges" class="method navigator-link" hash-for-method="validatingLoanAmountcalculator_FeesAndCharges">validatingLoanAmountcalculator_FeesAndCharges</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_003_007_UI_ValidatingLoanAmountcalculator_InterestRate" class="method navigator-link" hash-for-method="validatingLoanAmountcalculator_InterestRate">validatingLoanAmountcalculator_InterestRate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_003_008_UI_ValidatingLoanAmountcalculator_LoanTenture" class="method navigator-link" hash-for-method="validatingLoanAmountcalculator_LoanTenture">validatingLoanAmountcalculator_LoanTenture</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_003_010_UI_ValidatingLoanAmountcalculator_YearAndMonth" class="method navigator-link" hash-for-method="validatingLoanAmountcalculator_YearAndMonth">validatingLoanAmountcalculator_YearAndMonth</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_003_012_UI_ValidatingLoanTenturecalculator_EMI" class="method navigator-link" hash-for-method="validatingLoanTenturecalculator_EMI">validatingLoanTenturecalculator_EMI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_003_014_UI_ValidatingLoanTenturecalculator_FeesAndCharges" class="method navigator-link" hash-for-method="validatingLoanTenturecalculator_FeesAndCharges">validatingLoanTenturecalculator_FeesAndCharges</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_003_013_UI_ValidatingLoanTenturecalculator_InterestRate" class="method navigator-link" hash-for-method="validatingLoanTenturecalculator_InterestRate">validatingLoanTenturecalculator_InterestRate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Tc_003_011_UI_ValidatingLoanTenturecalculator_LoanAmount" class="method navigator-link" hash-for-method="validatingLoanTenturecalculator_LoanAmount">validatingLoanTenturecalculator_LoanAmount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">cucumber.Runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating car loan calculation&quot;, &quot;Car Loan&quot;)">
+                  </a> <!-- runScenario("Validating car loan calculation", "Car Loan") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating car loan calculation","Car Loan")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_003_002_UI_ValidatingEMIcalculator_InterestRate</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingEMIcalculator_InterestRate">
+                  </a> <!-- validatingEMIcalculator_InterestRate -->
+                  <span class="method-name">validatingEMIcalculator_InterestRate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_003_008_UI_ValidatingLoanAmountcalculator_LoanTenture</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingLoanAmountcalculator_LoanTenture">
+                  </a> <!-- validatingLoanAmountcalculator_LoanTenture -->
+                  <span class="method-name">validatingLoanAmountcalculator_LoanTenture</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_003_012_UI_ValidatingLoanTenturecalculator_EMI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingLoanTenturecalculator_EMI">
+                  </a> <!-- validatingLoanTenturecalculator_EMI -->
+                  <span class="method-name">validatingLoanTenturecalculator_EMI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_003_001_UI_ValidatingEMIcalculator_LoanAmount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingEMIcalculator_LoanAmount">
+                  </a> <!-- validatingEMIcalculator_LoanAmount -->
+                  <span class="method-name">validatingEMIcalculator_LoanAmount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_003_004_UI_ValidatingEMIcalculator_FeesAndCharges</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingEMIcalculator_FeesAndCharges">
+                  </a> <!-- validatingEMIcalculator_FeesAndCharges -->
+                  <span class="method-name">validatingEMIcalculator_FeesAndCharges</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_003_010_UI_ValidatingLoanAmountcalculator_YearAndMonth</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingLoanAmountcalculator_YearAndMonth">
+                  </a> <!-- validatingLoanAmountcalculator_YearAndMonth -->
+                  <span class="method-name">validatingLoanAmountcalculator_YearAndMonth</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_003_013_UI_ValidatingLoanTenturecalculator_InterestRate</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingLoanTenturecalculator_InterestRate">
+                  </a> <!-- validatingLoanTenturecalculator_InterestRate -->
+                  <span class="method-name">validatingLoanTenturecalculator_InterestRate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_003_005_UI_ValidatingEMIcalculator_YearAndMonth</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingEMIcalculator_YearAndMonth">
+                  </a> <!-- validatingEMIcalculator_YearAndMonth -->
+                  <span class="method-name">validatingEMIcalculator_YearAndMonth</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_003_007_UI_ValidatingLoanAmountcalculator_InterestRate</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingLoanAmountcalculator_InterestRate">
+                  </a> <!-- validatingLoanAmountcalculator_InterestRate -->
+                  <span class="method-name">validatingLoanAmountcalculator_InterestRate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_003_011_UI_ValidatingLoanTenturecalculator_LoanAmount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingLoanTenturecalculator_LoanAmount">
+                  </a> <!-- validatingLoanTenturecalculator_LoanAmount -->
+                  <span class="method-name">validatingLoanTenturecalculator_LoanAmount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_003_009_UI_ValidatingLoanAmountcalculator_FeesAndCharges</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingLoanAmountcalculator_FeesAndCharges">
+                  </a> <!-- validatingLoanAmountcalculator_FeesAndCharges -->
+                  <span class="method-name">validatingLoanAmountcalculator_FeesAndCharges</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_003_014_UI_ValidatingLoanTenturecalculator_FeesAndCharges</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingLoanTenturecalculator_FeesAndCharges">
+                  </a> <!-- validatingLoanTenturecalculator_FeesAndCharges -->
+                  <span class="method-name">validatingLoanTenturecalculator_FeesAndCharges</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_003_003_UI_ValidatingEMIcalculator_LoanTenure</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingEMIcalculator_LoanTenure">
+                  </a> <!-- validatingEMIcalculator_LoanTenure -->
+                  <span class="method-name">validatingEMIcalculator_LoanTenure</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_003_006_UI_ValidatingLoanAmountcalculator_Emi</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingLoanAmountcalculator_Emi">
+                  </a> <!-- validatingLoanAmountcalculator_Emi -->
+                  <span class="method-name">validatingLoanAmountcalculator_Emi</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Tc_002_HomeLoan</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="valaidateHomeLoan">
+                  </a> <!-- valaidateHomeLoan -->
+                  <span class="method-name">valaidateHomeLoan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\2318715\OneDrive - Cognizant\Pictures\HackertanProject - EMI calcualtor\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;outputUtility.ExtendReport&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;cucumber.Runner&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_002_HomeLoan&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_003_001_UI_ValidatingEMIcalculator_LoanAmount&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_003_002_UI_ValidatingEMIcalculator_InterestRate&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_003_003_UI_ValidatingEMIcalculator_LoanTenure&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_003_004_UI_ValidatingEMIcalculator_FeesAndCharges&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_003_005_UI_ValidatingEMIcalculator_YearAndMonth&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_003_006_UI_ValidatingLoanAmountcalculator_Emi&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_003_007_UI_ValidatingLoanAmountcalculator_InterestRate&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_003_008_UI_ValidatingLoanAmountcalculator_LoanTenture&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_003_009_UI_ValidatingLoanAmountcalculator_FeesAndCharges&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_003_010_UI_ValidatingLoanAmountcalculator_YearAndMonth&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_003_011_UI_ValidatingLoanTenturecalculator_LoanAmount&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_003_012_UI_ValidatingLoanTenturecalculator_EMI&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_003_013_UI_ValidatingLoanTenturecalculator_InterestRate&quot;/&gt;
+      &lt;class name=&quot;testcases.Tc_003_014_UI_ValidatingLoanTenturecalculator_FeesAndCharges&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (16 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'cucumber.Runner')
+data.setCell(0, 3, 21945);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'valaidateHomeLoan')
+data.setCell(1, 2, 'testcases.Tc_002_HomeLoan')
+data.setCell(1, 3, 16727);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validatingEMIcalculator_LoanTenure')
+data.setCell(2, 2, 'testcases.Tc_003_003_UI_ValidatingEMIcalculator_LoanTenure')
+data.setCell(2, 3, 7030);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validatingLoanAmountcalculator_YearAndMonth')
+data.setCell(3, 2, 'testcases.Tc_003_010_UI_ValidatingLoanAmountcalculator_YearAndMonth')
+data.setCell(3, 3, 5443);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validatingLoanTenturecalculator_EMI')
+data.setCell(4, 2, 'testcases.Tc_003_012_UI_ValidatingLoanTenturecalculator_EMI')
+data.setCell(4, 3, 4036);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validatingLoanTenturecalculator_LoanAmount')
+data.setCell(5, 2, 'testcases.Tc_003_011_UI_ValidatingLoanTenturecalculator_LoanAmount')
+data.setCell(5, 3, 4019);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validatingEMIcalculator_YearAndMonth')
+data.setCell(6, 2, 'testcases.Tc_003_005_UI_ValidatingEMIcalculator_YearAndMonth')
+data.setCell(6, 3, 3891);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validatingLoanAmountcalculator_LoanTenture')
+data.setCell(7, 2, 'testcases.Tc_003_008_UI_ValidatingLoanAmountcalculator_LoanTenture')
+data.setCell(7, 3, 3824);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validatingLoanTenturecalculator_FeesAndCharges')
+data.setCell(8, 2, 'testcases.Tc_003_014_UI_ValidatingLoanTenturecalculator_FeesAndCharges')
+data.setCell(8, 3, 3816);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validatingLoanTenturecalculator_InterestRate')
+data.setCell(9, 2, 'testcases.Tc_003_013_UI_ValidatingLoanTenturecalculator_InterestRate')
+data.setCell(9, 3, 3809);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validatingEMIcalculator_InterestRate')
+data.setCell(10, 2, 'testcases.Tc_003_002_UI_ValidatingEMIcalculator_InterestRate')
+data.setCell(10, 3, 3690);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validatingEMIcalculator_LoanAmount')
+data.setCell(11, 2, 'testcases.Tc_003_001_UI_ValidatingEMIcalculator_LoanAmount')
+data.setCell(11, 3, 3557);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validatingEMIcalculator_FeesAndCharges')
+data.setCell(12, 2, 'testcases.Tc_003_004_UI_ValidatingEMIcalculator_FeesAndCharges')
+data.setCell(12, 3, 3421);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validatingLoanAmountcalculator_InterestRate')
+data.setCell(13, 2, 'testcases.Tc_003_007_UI_ValidatingLoanAmountcalculator_InterestRate')
+data.setCell(13, 3, 3230);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validatingLoanAmountcalculator_FeesAndCharges')
+data.setCell(14, 2, 'testcases.Tc_003_009_UI_ValidatingLoanAmountcalculator_FeesAndCharges')
+data.setCell(14, 3, 1601);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'validatingLoanAmountcalculator_Emi')
+data.setCell(15, 2, 'testcases.Tc_003_006_UI_ValidatingLoanAmountcalculator_Emi')
+data.setCell(15, 3, 1392);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">cucumber.Runner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@13563e64)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating car loan calculation", "Car Loan")</span>
+                <span class="method-start">1044 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">23012 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_002_HomeLoan</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">23051 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">valaidateHomeLoan</span>
+                <span class="method-start">37221 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">53952 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_003_001_UI_ValidatingEMIcalculator_LoanAmount</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">58512 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validatingEMIcalculator_LoanAmount</span>
+                <span class="method-start">74359 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">77917 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_003_002_UI_ValidatingEMIcalculator_InterestRate</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">81674 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validatingEMIcalculator_InterestRate</span>
+                <span class="method-start">108170 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">111864 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_003_003_UI_ValidatingEMIcalculator_LoanTenure</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">115645 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validatingEMIcalculator_LoanTenure</span>
+                <span class="method-start">128867 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">135901 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_003_004_UI_ValidatingEMIcalculator_FeesAndCharges</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">139425 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validatingEMIcalculator_FeesAndCharges</span>
+                <span class="method-start">157089 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">160512 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_003_005_UI_ValidatingEMIcalculator_YearAndMonth</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">164131 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validatingEMIcalculator_YearAndMonth</span>
+                <span class="method-start">178094 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">181988 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_003_006_UI_ValidatingLoanAmountcalculator_Emi</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">186147 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validatingLoanAmountcalculator_Emi</span>
+                <span class="method-start">195899 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">197292 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_003_007_UI_ValidatingLoanAmountcalculator_InterestRate</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">200942 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validatingLoanAmountcalculator_InterestRate</span>
+                <span class="method-start">210944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">214176 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_003_008_UI_ValidatingLoanAmountcalculator_LoanTenture</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">217964 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validatingLoanAmountcalculator_LoanTenture</span>
+                <span class="method-start">232284 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">236111 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_003_009_UI_ValidatingLoanAmountcalculator_FeesAndCharges</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">239650 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validatingLoanAmountcalculator_FeesAndCharges</span>
+                <span class="method-start">251025 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">252627 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_003_010_UI_ValidatingLoanAmountcalculator_YearAndMonth</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">256251 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validatingLoanAmountcalculator_YearAndMonth</span>
+                <span class="method-start">267605 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">273049 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_003_011_UI_ValidatingLoanTenturecalculator_LoanAmount</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">277516 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validatingLoanTenturecalculator_LoanAmount</span>
+                <span class="method-start">288787 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">292809 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_003_012_UI_ValidatingLoanTenturecalculator_EMI</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">297336 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validatingLoanTenturecalculator_EMI</span>
+                <span class="method-start">309071 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">313108 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_003_013_UI_ValidatingLoanTenturecalculator_InterestRate</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">317359 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validatingLoanTenturecalculator_InterestRate</span>
+                <span class="method-start">328444 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">332254 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Tc_003_014_UI_ValidatingLoanTenturecalculator_FeesAndCharges</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup(edge)</span>
+                <span class="method-start">335746 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validatingLoanTenturecalculator_FeesAndCharges</span>
+                <span class="method-start">346793 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">350611 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
