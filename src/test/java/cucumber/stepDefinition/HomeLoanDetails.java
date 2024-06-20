@@ -16,19 +16,19 @@ public class HomeLoanDetails extends DriverInstance{
 	WebDriver driver;
 	PageObject p = new PageObject(DriverInstance.getDriver());
 	@Given("home loan details")
-	public void valaidateHomeLoan()
+	public void validateHomeLoan()
 	{
 		DriverInstance.getLogger().info("valildating HomeLoan");
 		 p.dropdown();//clicking the dropdown
 		 p.clickHomeEmiCalculator();
 		 li=p.getDetailsOfTheTable();
-		 ScreenShot.takeScreenshot(driver);
+		 ScreenShot.takeScreenshot(DriverInstance.getDriver(), "homeLoanTable");
 		 
 		}
 		
 	@And ("writing home loan details into excel sheets")
 	public void WritingHomeLoanDetails(){
-		DriverInstance.getLogger().info("writing the values in the table");
+		DriverInstance.getLogger().info("writing the values in the sheets");
 		ExcelWrite ex=new ExcelWrite();
 		ex.writeinTable(li);
 	}

@@ -7,8 +7,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import utility.Elements_Utils;
 public class PageObject {
 	
 	public WebDriver driver;
@@ -73,31 +76,45 @@ public class PageObject {
 	WebElement dropdowntab;
 	public void dropdown() 
 	{
+		Elements_Utils.highlightElement(dropdowntab);
 		dropdowntab.click();
+		Elements_Utils.undoHighlightElement(dropdowntab);
 	}
 	@FindBy(xpath="//a[@title='Home Loan EMI Calculator']")//click dropdown 
 	WebElement txt_HomeEmiCalculator;
 	public void clickHomeEmiCalculator() 
 	{
+		Elements_Utils.highlightElement(txt_HomeEmiCalculator);
 		txt_HomeEmiCalculator.click();
+		Elements_Utils.highlightElement(txt_HomeEmiCalculator);
 	}
 
 	@FindBy(xpath="//table[@class='noextras']/tbody/tr[contains(@class,'yearlypaymentdetails')]//td")//getting the rows in the table element
 	List <WebElement> txt_tablerow;
+	
 	@FindBy(xpath="//div[@id='paymentschedule']/table/tbody/tr/th")//getting the cells in the  table element
 	List <WebElement> txt_headings;
 	
-	public List<String>  getDetailsOfTheTable() 
+	@FindBy(xpath="//*[@id='paymentschedule']/table")
+	WebElement table;
+
+	public List<String> getDetailsOfTheTable() 
 	{
+		Actions actions = new Actions(driver);
+		actions.moveToElement(table);
+		actions.perform();
 		List <String> l=new ArrayList <String>();
-		 for(int i=0; i<txt_headings.size();i++) {
+		for(int i=0; i<txt_headings.size();i++) {
+			 Elements_Utils.highlightElement(table);
+			 
 			 if(!(txt_headings.get(i).getText().isBlank() || txt_headings.get(i).getText().isEmpty())) {
 				 l.add(txt_headings.get(i).getText());
-			 }
-		 }
-		 for(int i=0;i<txt_tablerow.size();i++) {
-			 l.add (txt_tablerow.get(i).getText());
-		 }
+				}
+			}
+			for(int i=0;i<txt_tablerow.size();i++) {
+				l.add (txt_tablerow.get(i).getText());
+			}
+			Elements_Utils.undoHighlightElement(table);
 		return l;
 	}
 	
@@ -106,14 +123,18 @@ public class PageObject {
     WebElement txt_loanCalculator;
 	public void clickLoanCalculator()
 	{
+		Elements_Utils.highlightElement(txt_loanCalculator);
 		txt_loanCalculator.click();
+		Elements_Utils.undoHighlightElement(txt_loanCalculator);
 	}
 	//click the emi calculator tab
 	@FindBy(xpath="//*[@class='hidden-ts']")
     WebElement txt_EMICalculator;
 	public void clickEMICalculator()
 	{
+		Elements_Utils.highlightElement(txt_EMICalculator);
 		txt_EMICalculator.click();
+		Elements_Utils.undoHighlightElement(txt_EMICalculator);
 	}
 	
 	//UI testing emi calculator loan amount
@@ -121,26 +142,22 @@ public class PageObject {
      WebElement txtbox_loanAmount;
 	@FindBy(xpath="//*[@id='loanamountslider']")//loan amount slider
     WebElement txtbox_loanAmountslider;
-	public WebElement loanAmountTextBox()
-	{
+
+	public WebElement loanAmountTextBox(){
 		return txtbox_loanAmount;
-		
 	}
-	public WebElement loanAmountslider()
-	{
+	public WebElement loanAmountslider(){
 		return txtbox_loanAmountslider;
-		
 	}
 	
 	//UI testing emi calculator interest rate
 	@FindBy(xpath="//*[@id='loaninterest']")//loan amount text box
     WebElement txtbox_InterestRate;
 	@FindBy(xpath="//*[@id='loaninterestslider']")//loan amount slider
-   WebElement txtbox_InterestRateslider;
-	public WebElement InterestRateTextBox()
-	{
+    WebElement txtbox_InterestRateslider;
+
+	public WebElement InterestRateTextBox(){
 		return txtbox_InterestRate;
-		
 	}
 	public WebElement InterestRateslider()
 	{
@@ -165,6 +182,7 @@ public class PageObject {
 	
 	@FindBy(xpath="//*[@id='loanfees']")//FeesAndCharges text box
     WebElement txtbox_FeesAndCharges;
+
 	@FindBy(xpath="//*[@id='loanfeesslider']")//FeesAndCharges slider
    WebElement txtbox_FeesAndChargesslider;
 	public WebElement FeesAndChargesTextBox()
@@ -188,17 +206,16 @@ public class PageObject {
 	
 	@FindBy(xpath="//*[@id='loanemi']")//EMI text box
     WebElement txtbox_Emi;
+
 	@FindBy(xpath="//*[@id='loanemislider']")//EMI FeesAndCharges slider
    WebElement txtbox_Emislider;
 	public WebElement EmiTextBox()
 	{
 		return txtbox_Emi;
-		
 	}
 	public WebElement Emislider()
 	{
 		return txtbox_Emislider;
-		
 	}
 	
 	//click the loan amount calculator tab
@@ -209,21 +226,7 @@ public class PageObject {
 			txt_LoanTentureCalculator.click();
 		}
 		
-   //checking the year and month
-//		@FindBy(xpath="//*[@class='btn btn-secondary active']")//click year tab
-//		WebElement button_Year;
-//		public void clickYearButton()
-//		{
-//			js.executeScript("button_Year.click();");
-//		}
-		
-		
-//		@FindBy(xpath="//*[@class='btn btn-secondary']")//click month tab
-//		WebElement button_Month;
-//		public void clickMonthButton()
-//		{
-//			js.executeScript("button_Month.click();");
-//		}
+
 		@FindBy(xpath="//*[@id='loanterm']")
 		WebElement txt_YearAndMonth;
 		public String getYearAndMonthText()
