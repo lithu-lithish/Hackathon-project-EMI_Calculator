@@ -9,9 +9,9 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src/test/resources/calcLoan.feature",
-					"src/test/resources/homeLoanDetails.feature", 
-					"src/test/resources/pageUi.feature"
+		features = {"src/test/resources/Features/calcLoan.feature",
+					"src/test/resources/Features/homeLoanDetails.feature", 
+					"src/test/resources/Features/pageUi.feature"
 					},
 		dryRun = !true,
 		glue = {"cucumber"},

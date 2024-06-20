@@ -1,4 +1,4 @@
-package cucumber.utility;
+package utility;
 import java.util.List;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;

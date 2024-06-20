@@ -24,3 +24,8 @@
 19:32:11.762 [main] INFO  cucumber.hooks.DriverInstance - valildating HomeLoan
 19:32:31.983 [main] INFO  cucumber.hooks.DriverInstance - writing the values in the table
 19:32:53.932 [main] INFO  cucumber.hooks.DriverInstance - Web Page opens
+19:52:39.340 [main] INFO  cucumber.hooks.DriverInstance - Web Page opens
+19:53:01.147 [main] INFO  cucumber.hooks.DriverInstance - Web Page opens
+19:53:01.156 [main] INFO  cucumber.hooks.DriverInstance - valildating HomeLoan
+19:53:12.685 [main] INFO  cucumber.hooks.DriverInstance - writing the values in the table
+19:53:32.887 [main] INFO  cucumber.hooks.DriverInstance - Web Page opens

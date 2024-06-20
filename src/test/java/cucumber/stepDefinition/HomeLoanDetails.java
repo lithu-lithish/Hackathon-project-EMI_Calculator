@@ -8,7 +8,7 @@ import cucumber.hooks.DriverInstance;
 import excelUtility.ExcelWrite;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import cucumber.utility.ScreenShot;
+import utility.ScreenShot;
 
 public class HomeLoanDetails extends DriverInstance{
 	static List <String> li;

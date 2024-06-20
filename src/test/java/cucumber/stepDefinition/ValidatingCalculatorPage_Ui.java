@@ -1,14 +1,12 @@
 package cucumber.stepDefinition;
-import java.util.List;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.asserts.SoftAssert;
 
 import cucumber.PageObjectCucumber.PageObject;
 import cucumber.hooks.DriverInstance;
-import cucumber.utility.ScreenShot;
-import cucumber.utility.yearAndMonthScale;
+import utility.ScreenShot;
+import utility.yearAndMonthScale;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 public class ValidatingCalculatorPage_Ui extends DriverInstance{

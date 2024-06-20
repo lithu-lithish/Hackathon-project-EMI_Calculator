@@ -1,4 +1,4 @@
-package outputUtility;
+package utility;
 
 import java.io.File;
 import org.openqa.selenium.OutputType;
