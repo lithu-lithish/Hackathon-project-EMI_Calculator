@@ -33,16 +33,14 @@ public class DriverSetupCucumber {
 			 DriverInstance.getLogger().info("Web Page opens");
 			isInitialized = true;	
 			isQuit=true;
-		// }
-	
-	}
-	
+		// }	
+	}	
 	
 	@After
 	public void quitAplication() throws IOException {
 		
-		if(isQuit){
+	
 			driver.quit();
-		}
+		
 	}
 }

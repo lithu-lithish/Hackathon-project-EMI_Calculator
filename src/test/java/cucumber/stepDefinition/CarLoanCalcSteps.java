@@ -1,7 +1,8 @@
 package cucumber.stepDefinition;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 
 import utility.ScreenShot;
 import cucumber.PageObjectCucumber.PageObjectCucumber;
@@ -58,7 +59,7 @@ public class CarLoanCalcSteps extends DriverInstance{
 	    
 	    System.out.println("Interest Amount Of First Month: ₹"+interestAmount+"\nPrinciple Amount Of First Month: ₹"+principleAmount);
 	    
-	    Assert.assertTrue(interestAmount>0&&principleAmount>0);
+	    assertTrue(interestAmount>0&&principleAmount>0);
 		ScreenShot.takeScreenshot(DriverInstance.getDriver(), "interest_principle_amount");
 	}
 }

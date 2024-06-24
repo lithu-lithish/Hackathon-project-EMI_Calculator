@@ -1,6 +1,5 @@
 C:\Users\2318715\OneDrive - Cognizant\Pictures\HackathonProject - EMI calcualtor\src\test\java\cucumber\hooks\DriverSetupCucumber.java
 C:\Users\2318715\OneDrive - Cognizant\Pictures\HackathonProject - EMI calcualtor\src\test\java\cucumber\hooks\DriverInstance.java
-C:\Users\2318715\OneDrive - Cognizant\Pictures\HackathonProject - EMI calcualtor\src\test\java\cucumber\testRunner\Runner.java
 C:\Users\2318715\OneDrive - Cognizant\Pictures\HackathonProject - EMI calcualtor\src\test\java\cucumber\stepDefinition\HomeLoanDetails.java
 C:\Users\2318715\OneDrive - Cognizant\Pictures\HackathonProject - EMI calcualtor\src\test\java\utility\ScreenShot.java
 C:\Users\2318715\OneDrive - Cognizant\Pictures\HackathonProject - EMI calcualtor\src\test\java\cucumber\stepDefinition\ValidatingCalculatorPage_Ui.java
@@ -9,4 +8,5 @@ C:\Users\2318715\OneDrive - Cognizant\Pictures\HackathonProject - EMI calcualtor
 C:\Users\2318715\OneDrive - Cognizant\Pictures\HackathonProject - EMI calcualtor\src\test\java\excelUtility\ExcelRead.java
 C:\Users\2318715\OneDrive - Cognizant\Pictures\HackathonProject - EMI calcualtor\src\test\java\cucumber\PageObjectCucumber\PageObjectCucumber.java
 C:\Users\2318715\OneDrive - Cognizant\Pictures\HackathonProject - EMI calcualtor\src\test\java\cucumber\stepDefinition\CarLoanCalcSteps.java
+C:\Users\2318715\OneDrive - Cognizant\Pictures\HackathonProject - EMI calcualtor\src\test\java\cucumber\testRunner\TestRunner.java
 C:\Users\2318715\OneDrive - Cognizant\Pictures\HackathonProject - EMI calcualtor\src\test\java\excelUtility\ExcelWrite.java

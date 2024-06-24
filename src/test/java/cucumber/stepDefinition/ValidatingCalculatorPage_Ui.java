@@ -1,7 +1,8 @@
 package cucumber.stepDefinition;
 
 import org.openqa.selenium.WebElement;
-import org.testng.asserts.SoftAssert;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 
 import cucumber.PageObjectCucumber.PageObject;
 import cucumber.hooks.DriverInstance;
@@ -11,13 +12,10 @@ import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 public class ValidatingCalculatorPage_Ui extends DriverInstance{
 
-	
-
 	@When("Validating Ui of EmiCalculator_LoanAmount_page")
 	public void validatingEMIcalculator_LoanAmount(){
 		// l.info("valildating  EMI calculator LoanAmount");
 		PageObject p=new PageObject(DriverInstance.getDriver());
-		SoftAssert s=new SoftAssert();
 		p.dropdown();
 		p.clickLoanCalculator();
 		p.clickEMICalculator();
@@ -39,10 +37,10 @@ public class ValidatingCalculatorPage_Ui extends DriverInstance{
 			Elements_Utils.highlightElement(element);
 			if(element.isDisplayed()){
 				status = true;
-				s.assertTrue(true);
+				assertTrue(true);
 			} else{
 				status = false;
-				s.assertFalse(false);
+				assertFalse(false);
 			}      
 			Elements_Utils.undoHighlightElement(element);
 		}
@@ -54,7 +52,6 @@ public class ValidatingCalculatorPage_Ui extends DriverInstance{
 	public void validatingLoanAmountcalculator_Emi(){
 		// l.info("validating LoanAmount calculator Emi");
 		PageObject p=new PageObject(DriverInstance.getDriver());
-		SoftAssert s=new SoftAssert();
 		p.dropdown();
 		p.clickLoanCalculator();
 		p.clickLoanAmountCalculator();
@@ -77,10 +74,10 @@ public class ValidatingCalculatorPage_Ui extends DriverInstance{
 			if(element.isDisplayed()){
 				Elements_Utils.highlightElement(element);
 				status = true;
-				s.assertTrue(true);
+				assertTrue(true);
 			} else{
 				status = false;
-				s.assertFalse(false);
+				assertFalse(false);
 			}      
 			Elements_Utils.undoHighlightElement(element);
 		}
@@ -92,7 +89,7 @@ public class ValidatingCalculatorPage_Ui extends DriverInstance{
 		{
 			// l.info("validating LoanTenture calculator FeesAndCharges");
 			PageObject p=new PageObject(DriverInstance.getDriver());
-			SoftAssert s=new SoftAssert();
+
 			p.dropdown();
 			p.clickLoanCalculator();
 			p.clickLoanTentureCalculator();
@@ -113,10 +110,10 @@ public class ValidatingCalculatorPage_Ui extends DriverInstance{
 			Elements_Utils.highlightElement(element);
 			if(element.isDisplayed()){
 				status = true;
-				s.assertTrue(true);
+				assertTrue(true);
 			} else{
 				status = false;
-				s.assertFalse(false);
+				assertFalse(false);
 			}      
 			Elements_Utils.undoHighlightElement(element);
 		}

@@ -2,7 +2,7 @@ package utility;
 import java.util.List;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.testng.asserts.SoftAssert;
+import static org.junit.Assert.assertTrue;
 import cucumber.PageObjectCucumber.PageObject;
 import cucumber.hooks.DriverInstance;
 
@@ -11,7 +11,6 @@ public class Elements_Utils extends DriverInstance {
 
 			// validating year_and_month
 			PageObject p=new PageObject(DriverInstance.getDriver());
-			SoftAssert s=new SoftAssert();
 
 			String year=p.getYearAndMonthText();
 			int yearInt = Integer.parseInt(year);
@@ -39,14 +38,14 @@ public class Elements_Utils extends DriverInstance {
 			}
 			//System.out.println(Arrays.toString(monthScale));
 			for(int k=0;k<list.size();k++) {
-				s.assertTrue(monthScale[k]/12==yearScale[k]);
+				assertTrue(monthScale[k]/12==yearScale[k]);
 			}
 			if(month.equals(Integer.toString(yearInt*12))) {
-				s.assertTrue(true);
+				assertTrue(true);
 				DriverInstance.getLogger().info("Year And Month verified");
 			}
 			else{
-				s.assertTrue(false);
+				assertTrue(false);
 				DriverInstance.getLogger().info("Year And Month failed");
 			}
 		}
