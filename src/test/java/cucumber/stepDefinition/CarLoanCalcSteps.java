@@ -2,10 +2,9 @@ package cucumber.stepDefinition;
 
 import org.openqa.selenium.WebDriver;
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertFalse;
 
 import utility.ScreenShot;
-import cucumber.PageObjectCucumber.PageObjectCucumber;
+import cucumber.PageObjectCucumber.PageObject;
 import cucumber.hooks.DriverInstance;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -13,7 +12,7 @@ import io.cucumber.java.en.When;
 
 public class CarLoanCalcSteps extends DriverInstance{
     WebDriver driver;
-	PageObjectCucumber poc = new PageObjectCucumber(DriverInstance.getDriver());
+	PageObject poc = new PageObject(DriverInstance.getDriver());
 	
 	@Given("user click car loan")
 	public void userClickCarLoan() {

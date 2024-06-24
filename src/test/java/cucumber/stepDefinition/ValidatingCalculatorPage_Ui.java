@@ -34,6 +34,7 @@ public class ValidatingCalculatorPage_Ui extends DriverInstance{
 		DriverInstance.getLogger().info("Checking EMI_Calculator Elements displayed or not");
 		for(WebElement element : elementsDisplayedCheck){
 			boolean status = false;
+			element.click();
 			Elements_Utils.highlightElement(element);
 			if(element.isDisplayed()){
 				status = true;
@@ -71,6 +72,7 @@ public class ValidatingCalculatorPage_Ui extends DriverInstance{
 
        for(WebElement element : elementsDisplayedCheck){
 			boolean status = false;
+			element.click();
 			if(element.isDisplayed()){
 				Elements_Utils.highlightElement(element);
 				status = true;
@@ -107,6 +109,7 @@ public class ValidatingCalculatorPage_Ui extends DriverInstance{
 		DriverInstance.getLogger().info("Checking LoanTenure Elements displayed or not");
         for(WebElement element : elementsDisplayedCheck){
 			boolean status = false;
+			element.click();
 			Elements_Utils.highlightElement(element);
 			if(element.isDisplayed()){
 				status = true;

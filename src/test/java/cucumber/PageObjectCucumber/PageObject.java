@@ -22,53 +22,62 @@ public class PageObject {
 	}
 	
 	//*************TestCase1
-	//for car tab
-	@FindBy(xpath="//*[@id=\"car-loan\"]")
-	WebElement cartab;
-	public void clickCarTab() {
-		cartab.click();
-	}
-	//for enter the input fields
-	
-	@FindBy(xpath="//*[@id='loanamount']")//amount
-	WebElement txt_amount;
-	
-	@FindBy(xpath="//*[@id='loaninterest']")//interest percent
-	WebElement txt_interest;
-	
-	@FindBy(xpath="//*[@id='loanterm']")//tenture year
-	WebElement txt_year;
-	public void enterAmountValues()
-	{
-		txt_amount.sendKeys(Keys.chord(Keys.CONTROL, "a"), "1500000");
-		txt_interest.sendKeys(Keys.chord(Keys.CONTROL, "a"), "9.5");
-		txt_year.sendKeys(Keys.chord(Keys.CONTROL,"a"),"1");
-		txt_year.sendKeys(Keys.ENTER);
+	@FindBy(xpath="//a[text()='Car Loan']")
+	WebElement car_loan;
+
+	public void clickCarLoan() {
+		Elements_Utils.highlightElement(car_loan);
+		car_loan.click();
+		Elements_Utils.undoHighlightElement(car_loan);
 	}
 	
-	//getting the values in the carLoan 
-	@FindBy(xpath="//div[@id='emiamount']/p/span")//loan emi
-	WebElement txt_Loanemi;
-	public String LoanEmi()
-	{
-		return txt_Loanemi.getText();
+	@FindBy(id="loanamount")
+	WebElement loan_amount;
+	public void loanAmount(Integer loanamount){
+		Elements_Utils.highlightElement(loan_amount);
+		loan_amount.sendKeys(Keys.chord(Keys.CONTROL, "a"), String.valueOf(loanamount));
+		Elements_Utils.undoHighlightElement(loan_amount);
+	}
+	
+	@FindBy(id="loaninterest")
+	WebElement interest_rate;
+	public void interestRate(Double interestRate) {
+		Elements_Utils.highlightElement(interest_rate);
+		interest_rate.sendKeys(Keys.chord(Keys.CONTROL, "a"), String.valueOf(interestRate));
+		Elements_Utils.undoHighlightElement(interest_rate);
+	}
+	
+	@FindBy(id="loanterm")
+	WebElement loan_tenure;
+	public void loanTenure(Integer loanTenure) {
+		Elements_Utils.highlightElement(loan_tenure);
+		loan_tenure.sendKeys(Keys.chord(Keys.CONTROL, "a"), String.valueOf(loanTenure));
+		Elements_Utils.undoHighlightElement(loan_tenure);
+	}
+	
+	public void pressEnter() {
+		loan_tenure.sendKeys(Keys.ENTER);
+	}
+	
+	@FindBy(id="year2024")
+	WebElement cur_yr;
+	
+	@FindBy(xpath="//div[@class='monthlypaymentcontainer']//td[3]")
+	WebElement interest_amount;
+	
+	@FindBy(xpath="//div[@class='monthlypaymentcontainer']//td[2]")
+	WebElement principle_amount;
+	
+	public String[] getAmounts() throws Exception {
+		Elements_Utils.highlightElement(cur_yr);
+		cur_yr.click();
+		Elements_Utils.undoHighlightElement(cur_yr);
+		Thread.sleep(2000);
+		String[] amounts = new String[2];
 		
-	}
-	
-	@FindBy(xpath="//*[@id='emitotalinterest']/p/span")//Totalinterestpayable
-	WebElement txt_Totalinterestpayable;
-	public String Totalinterestpayable()
-	{
-		return txt_Totalinterestpayable.getText();
-		
-	}
-	
-	@FindBy(xpath="//*[@id='emitotalamount']/p/span")//Totalamount
-	WebElement txt_Totalamount;
-	public String Totalamount()
-	{
-		return txt_Totalamount.getText();
-		
+		amounts[0]=interest_amount.getText();
+		amounts[1]=principle_amount.getText();
+		return amounts;
 	}
 	//*********** testcase 2
 	//HomeLone EMI calculator
@@ -118,20 +127,20 @@ public class PageObject {
 		return l;
 	}
 	
-	//dropdown for ui check
+	//dropdown webElement
 	@FindBy(xpath="//*[@id=\"menu-item-2423\"]/a")
     WebElement txt_loanCalculator;
-	public void clickLoanCalculator()
-	{
+
+	public void clickLoanCalculator(){
 		Elements_Utils.highlightElement(txt_loanCalculator);
 		txt_loanCalculator.click();
 		Elements_Utils.undoHighlightElement(txt_loanCalculator);
 	}
+
 	//click the emi calculator tab
 	@FindBy(xpath="//*[@class='hidden-ts']")
     WebElement txt_EMICalculator;
-	public void clickEMICalculator()
-	{
+	public void clickEMICalculator(){
 		Elements_Utils.highlightElement(txt_EMICalculator);
 		txt_EMICalculator.click();
 		Elements_Utils.undoHighlightElement(txt_EMICalculator);
@@ -140,6 +149,7 @@ public class PageObject {
 	//UI testing emi calculator loan amount
 	@FindBy(xpath="//*[@id='loanamount']")//loan amount text box
      WebElement txtbox_loanAmount;
+
 	@FindBy(xpath="//*[@id='loanamountslider']")//loan amount slider
     WebElement txtbox_loanAmountslider;
 
@@ -159,84 +169,75 @@ public class PageObject {
 	public WebElement InterestRateTextBox(){
 		return txtbox_InterestRate;
 	}
-	public WebElement InterestRateslider()
-	{
+	public WebElement InterestRateslider(){
 		return txtbox_InterestRateslider;
-		
 	}
 	
 	@FindBy(xpath="//*[@id='loanterm']")//LoanTenure text box
     WebElement txtbox_LoanTenure;
 	@FindBy(xpath="//*[@id='loantermslider']")// LoanTenure slider
    WebElement txtbox_LoanTenureslider;
-	public WebElement LoanTenureTextBox()
-	{
+	public WebElement LoanTenureTextBox(){
 		return txtbox_LoanTenure;
-		
 	}
-	public WebElement LoanTenureslider()
-	{
+	public WebElement LoanTenureslider(){
 		return txtbox_LoanTenureslider;
-		
 	}
 	
 	@FindBy(xpath="//*[@id='loanfees']")//FeesAndCharges text box
     WebElement txtbox_FeesAndCharges;
 
 	@FindBy(xpath="//*[@id='loanfeesslider']")//FeesAndCharges slider
-   WebElement txtbox_FeesAndChargesslider;
-	public WebElement FeesAndChargesTextBox()
-	{
-		return txtbox_FeesAndCharges;
-		
+    WebElement txtbox_FeesAndChargesslider;
+
+	public WebElement FeesAndChargesTextBox(){
+		return txtbox_FeesAndCharges;	
 	}
-	public WebElement FeesAndChargesslider()
-	{
-		return txtbox_FeesAndChargesslider;
-		
+	public WebElement FeesAndChargesslider(){
+		return txtbox_FeesAndChargesslider;	
 	}
 	
 	//click the loan amount calculator tab
 	@FindBy(xpath="//*[@id='loan-amount-calc']")
     WebElement txt_LoanAmountCalculator;
-	public void clickLoanAmountCalculator()
-	{
+
+	public void clickLoanAmountCalculator(){
+		Elements_Utils.highlightElement(interest_rate);
 		txt_LoanAmountCalculator.click();
+		Elements_Utils.undoHighlightElement(interest_rate);
 	}
 	
 	@FindBy(xpath="//*[@id='loanemi']")//EMI text box
     WebElement txtbox_Emi;
 
 	@FindBy(xpath="//*[@id='loanemislider']")//EMI FeesAndCharges slider
-   WebElement txtbox_Emislider;
-	public WebElement EmiTextBox()
-	{
+    WebElement txtbox_Emislider;
+	public WebElement EmiTextBox(){
 		return txtbox_Emi;
 	}
-	public WebElement Emislider()
-	{
+	public WebElement Emislider(){
 		return txtbox_Emislider;
 	}
 	
 	//click the loan amount calculator tab
 		@FindBy(xpath="//*[@id='loan-tenure-calc']")
 	    WebElement txt_LoanTentureCalculator;
-		public void clickLoanTentureCalculator()
-		{
+		public void clickLoanTentureCalculator(){
+			Elements_Utils.highlightElement(interest_rate);
 			txt_LoanTentureCalculator.click();
+			Elements_Utils.undoHighlightElement(interest_rate);
 		}
 		
 
 		@FindBy(xpath="//*[@id='loanterm']")
 		WebElement txt_YearAndMonth;
-		public String getYearAndMonthText()
-		{
+		public String getYearAndMonthText(){
 			 return txt_YearAndMonth.getAttribute("value");
 		}
+
 		@FindBy(xpath="//div[@id='loantermsteps']//span[@class='marker']")
 		List <WebElement> txt_YearAndMonthSlider;
-		public List <WebElement> getYearAndMonthSlider()
-		{
+		public List <WebElement> getYearAndMonthSlider(){
 			 return txt_YearAndMonthSlider;
 		}
 
