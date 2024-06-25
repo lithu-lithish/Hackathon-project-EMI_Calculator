@@ -1,6 +1,6 @@
-COGNIZANT GENC - SELENIUM HACKATHON
+COGNIZANT GENC - SELENIUM HACKATHON [Find the Interest Amount for current year]
 
-Features:-
+Features of the Project:
 
 1. Testing Framework (Cucumber with JUnit).
 2. Log4j logging
@@ -8,7 +8,7 @@ Features:-
 4. Cucumber reports
 
 
-Problem Statement : Find the Interest Amount for current year
+Given Problem Statement : 
 
 1. Buying a  car of 15 Lac
 2. Interest rate of 9.5%
