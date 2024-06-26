@@ -30,6 +30,7 @@ public class HomeLoanDetails extends DriverInstance{
 	public void WritingHomeLoanDetails(){
 		DriverInstance.getLogger().info("writing the values in the sheets");
 		ExcelWrite ex=new ExcelWrite();
-		ex.writeinTable(li);
+		int no_of_col = p.getColumnHeadingCount();
+		ex.writeinTable(li,no_of_col);
 	}
 }

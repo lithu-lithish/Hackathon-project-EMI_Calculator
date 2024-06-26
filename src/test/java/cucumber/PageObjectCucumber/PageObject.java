@@ -107,6 +107,10 @@ public class PageObject {
 	@FindBy(xpath="//*[@id='paymentschedule']/table")
 	WebElement table;
 
+	public int getColumnHeadingCount(){
+		return txt_headings.size();
+	}
+
 	public List<String> getDetailsOfTheTable() 
 	{
 		Actions actions = new Actions(driver);

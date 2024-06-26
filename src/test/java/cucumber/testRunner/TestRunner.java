@@ -15,7 +15,9 @@ import io.cucumber.junit.CucumberOptions;
 		dryRun = false,
 		glue = {"cucumber"},
 		monochrome=true,
-		plugin= {"pretty","html:cucumberreport/index.html"}
+		plugin= {"pretty","html:cucumberReport/index.html",
+				 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" ,
+				}
 		)
 public class TestRunner {
 	
